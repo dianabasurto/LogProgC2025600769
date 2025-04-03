@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea Grupos"/>
+        <attribute name="authors" value="basur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 06:00:54 p. m."/>
+        <attribute name="created" value="YmFzdXI7RElBTkFCQVNVUlRPOzIwMjUtMDQtMDI7MDU6NDE6MjkgcC4gbS47MjkwMg=="/>
+        <attribute name="edited" value="YmFzdXI7RElBTkFCQVNVUlRPOzIwMjUtMDQtMDI7MDY6MDA6NTQgcC4gbS47MTszMDA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicial" type="String" array="False" size=""/>
+            <declare name="sexo" type="String" array="False" size=""/>
+            <declare name="n" type="String" array="False" size=""/>
+            <declare name="m" type="String" array="False" size=""/>
+            <output expression="&quot;cual es tu sexo? femenino o masculino&quot;" newline="True"/>
+            <input variable="sexo"/>
+            <output expression="&quot;cual es tu inicial?&quot;" newline="True"/>
+            <input variable="inicial"/>
+            <if expression="inicial==m and inicial==n">
+                <then>
+                    <output expression="&quot;tu grupo es el B&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;tu grupo es el A&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
