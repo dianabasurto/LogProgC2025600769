@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pizzas"/>
+        <attribute name="authors" value="basur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 02:46:34 p. m."/>
+        <attribute name="created" value="YmFzdXI7RElBTkFCQVNVUlRPOzIwMjUtMDQtMDQ7MDI6MDY6MDQgcC4gbS47Mjg5NQ=="/>
+        <attribute name="edited" value="YmFzdXI7RElBTkFCQVNVUlRPOzIwMjUtMDQtMDQ7MDI6NDY6MzQgcC4gbS47MTszMDEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pizza" type="Integer" array="False" size=""/>
+            <output expression="&quot;que piza va a querer? tenemos las siguientes opciones: 1. vegetariana 2. no vegetariana&quot;" newline="True"/>
+            <input variable="pizza"/>
+            <if expression="pizza=1">
+                <then>
+                    <output expression="&quot;Los ingredientes disponibles son: pimiento y tofu&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pizza=2">
+                        <then>
+                            <output expression="&quot;los ingredientes disponibles son: peperoni, jamon y salmon&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;error&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
