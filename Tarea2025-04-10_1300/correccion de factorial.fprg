@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="correccion de factorial"/>
+        <attribute name="authors" value="basur"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 11:15:51 p. m."/>
+        <attribute name="created" value="YmFzdXI7RElBTkFCQVNVUlRPOzIwMjUtMDQtMDg7MTE6MTE6MzAgcC4gbS47Mjg5NA=="/>
+        <attribute name="edited" value="YmFzdXI7RElBTkFCQVNVUlRPOzIwMjUtMDQtMDg7MTE6MTU6NTEgcC4gbS47MTszMDA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="entero" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="factorial" expression="1"/>
+            <input variable="entero"/>
+            <while expression="i&lt;=entero">
+                <assign variable="factorial" expression="factorial*i"/>
+                <assign variable="i" expression="i+1"/>
+                <output expression="factorial" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
